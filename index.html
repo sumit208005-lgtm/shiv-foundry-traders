@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shiv Foundry Traders, Kanpur — trusted supplier for tool repair, maintenance, new manufacturing and assembly. White metal bearings, pistons, impellers, wheels, C.I. & steel casting, fabrication and pattern making. Bulk and repeat orders welcome.">
+<meta name="keywords" content="tool repair Kanpur, machine parts trader Kanpur, bulk manufacturing order Kanpur, white metal bearing Kanpur, casting fabrication Kanpur, pump impeller supplier, pattern making Kanpur, C.I. casting trader, machine maintenance Kanpur, assembly service Kanpur">
+<title>Shiv Foundry Traders — Casting, Fabrication & Pattern Works</title>
+<link rel="preload" as="video" href="hero-video-1.mp4" type="video/mp4">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --iron:#17181a;
+    --iron-2:#232629;
+    --steel:#4d5763;
+    --steel-light:#8b93a0;
+    --paper:#eeece6;
+    --paper-2:#e2dfd6;
+    --glow:#d9642c;
+    --glow-dim:#b5501e;
+    --line: rgba(238,236,230,0.14);
+    --line-dark: rgba(23,24,26,0.14);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--iron);
+    font-family:'Work Sans', sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:700;
+    letter-spacing:0.01em;
+    line-height:1.05;
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+
+  /* ---------- HEADER ---------- */
+  .topbar{
+    background:var(--iron-2);
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+  }
+  .topbar-inner{
+    display:flex; gap:28px; padding:7px 28px;
+    font-size:0.74rem; color:var(--steel-light);
+    letter-spacing:0.01em;
+    white-space:nowrap; overflow-x:auto;
+  }
+  .topbar-inner::-webkit-scrollbar{display:none;}
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--iron);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 0;
+    color:var(--paper);
+  }
+  .brand{
+    display:flex; flex-direction:column; gap:1px;
+  }
+  .brand .name{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:1.5rem; font-weight:800; color:var(--paper);
+    letter-spacing:0.02em;
+  }
+  .brand .tag{
+    font-size:0.68rem; color:var(--steel-light);
+    letter-spacing:0.08em;
+  }
+  .navlinks{display:flex; gap:32px; font-size:0.92rem;}
+  .navlinks a{color:var(--paper); opacity:0.82; border-bottom:1px solid transparent; padding-bottom:3px;}
+  .navlinks a:hover{opacity:1; border-color:var(--glow);}
+  .navcta{
+    background:var(--glow); color:var(--iron);
+    padding:9px 18px; font-weight:600; font-size:0.88rem;
+    border:1px solid var(--glow);
+  }
+  .navcta:hover{background:transparent; color:var(--paper);}
+  .burger{display:none; color:var(--paper); font-size:1.6rem; cursor:pointer; background:none; border:none;}
+
+  @media (max-width:820px){
+    .navlinks{
+      position:absolute; top:100%; left:0; right:0;
+      background:var(--iron);
+      flex-direction:column; gap:0;
+      max-height:0; overflow:hidden;
+      border-bottom:1px solid var(--line);
+      transition:max-height 0.3s ease;
+    }
+    .navlinks.open{max-height:320px;}
+    .navlinks a{padding:14px 28px; border-bottom:1px solid var(--line);}
+    .navcta{display:none;}
+    .burger{display:block;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:
+      radial-gradient(ellipse 900px 500px at 82% -10%, rgba(217,100,44,0.20), transparent 60%),
+      linear-gradient(180deg, var(--iron) 0%, var(--iron-2) 100%);
+    color:var(--paper);
+    padding:88px 0 76px;
+    position:relative;
+    overflow:hidden;
+    border-bottom:1px solid var(--line);
+    min-height:560px;
+  }
+  .hero-video{
+    position:absolute; inset:0;
+    width:100%; height:100%;
+    object-fit:cover;
+    object-position:center center;
+    display:block;
+    z-index:0;
+    opacity:0.8;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(15,16,17,0.55) 0%, rgba(15,16,17,0.8) 100%);
+    z-index:0;
+  }
+  .hero::after{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(238,236,230,0.035) 0 1px, transparent 1px 64px),
+      repeating-linear-gradient(90deg, rgba(238,236,230,0.035) 0 1px, transparent 1px 64px);
+    pointer-events:none;
+    z-index:0;
+  }
+  .hero-inner{position:relative; z-index:1; display:grid; grid-template-columns:1.3fr 1fr; gap:48px; align-items:end;}
+  .hero h1, .hero .hero-eyebrow, .hero p.lead{
+    text-shadow:0 2px 12px rgba(0,0,0,0.6);
+  }
+  .hero-eyebrow{
+    font-size:0.78rem; color:var(--glow); font-weight:600;
+    margin-bottom:18px; letter-spacing:0.03em;
+  }
+  .hero h1{
+    font-size:clamp(2.6rem, 5vw, 4.2rem);
+    color:var(--paper);
+    max-width:12ch;
+  }
+  .hero h1 em{
+    font-style:normal; color:var(--glow);
+  }
+  .hero p.lead{
+    margin-top:22px; max-width:46ch; font-size:1.08rem; color:var(--steel-light);
+  }
+  .hero-actions{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
+  .btn{
+    display:inline-block; padding:13px 26px; font-weight:600; font-size:0.95rem;
+    border:1px solid var(--glow);
+  }
+  .btn-solid{background:var(--glow); color:var(--iron);}
+  .btn-solid:hover{background:var(--glow-dim); border-color:var(--glow-dim);}
+  .btn-outline{color:var(--paper); border-color:var(--line);}
+  .btn-outline:hover{border-color:var(--paper);}
+
+  .hero-panel{
+    border:1px solid var(--line);
+    background:rgba(238,236,230,0.03);
+    padding:26px;
+  }
+  .hero-panel .row{
+    display:flex; justify-content:space-between; align-items:baseline;
+    padding:14px 0; border-bottom:1px solid var(--line);
+  }
+  .hero-panel .row:last-child{border-bottom:none;}
+  .hero-panel .row .k{font-size:0.82rem; color:var(--steel-light);}
+  .hero-panel .row .v{font-family:'Barlow Condensed'; font-size:1.6rem; font-weight:700; color:var(--paper);}
+
+  @media (max-width:900px){
+    .hero-inner{grid-template-columns:1fr;}
+    .hero h1{max-width:none;}
+  }
+
+  /* ---------- SECTION HEADERS ---------- */
+  .section{padding:74px 0;}
+  .section-head{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    gap:24px; margin-bottom:40px; border-bottom:1px solid var(--line-dark); padding-bottom:22px;
+  }
+  .section-head h2{font-size:clamp(1.9rem, 3.4vw, 2.6rem);}
+  .section-head p{max-width:34ch; color:var(--steel); font-size:0.96rem;}
+  .kicker{font-size:0.78rem; color:var(--glow-dim); font-weight:600; margin-bottom:10px;}
+
+  /* ---------- SERVICES GRID ---------- */
+  .grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:1px;
+    background:var(--line-dark);
+    border:1px solid var(--line-dark);
+  }
+  .card{
+    background:var(--paper);
+    padding:30px 26px;
+    position:relative;
+  }
+  .card .num{
+    font-family:'Barlow Condensed'; font-size:0.8rem; color:var(--glow-dim); font-weight:700;
+  }
+  .card h3{font-size:1.4rem; margin-top:10px; margin-bottom:10px;}
+  .card p{font-size:0.9rem; color:var(--steel); max-width:34ch;}
+  @media (max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} .pulse-grid{grid-template-columns:1fr;} }
+  @media (max-width:600px){ .grid{grid-template-columns:1fr;} }
+
+  /* ---------- PROCESS STRIP ---------- */
+  .strip{background:var(--iron-2); color:var(--paper); padding:56px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .strip .wrap{display:grid; grid-template-columns:repeat(4,1fr); gap:32px;}
+  .strip .item .big{font-family:'Barlow Condensed'; font-size:2.6rem; font-weight:800; color:var(--glow);}
+  .strip .item .lbl{font-size:0.86rem; color:var(--steel-light); margin-top:4px;}
+  @media (max-width:800px){ .strip .wrap{grid-template-columns:repeat(2,1fr);} }
+
+  /* ---------- PRODUCT GALLERY ---------- */
+  .pgrid{
+    display:grid; grid-template-columns:repeat(4, 1fr); gap:1px;
+    background:var(--line-dark); border:1px solid var(--line-dark);
+  }
+  .pcard{ background:var(--paper); }
+  .pcard .thumb{
+    aspect-ratio:1/1; overflow:hidden; background:var(--iron-2);
+  }
+  .pcard .thumb img{
+    width:100%; height:100%; object-fit:cover; display:block;
+  }
+  .pcard .cap{
+    padding:12px 14px; font-size:0.86rem; font-weight:600;
+    border-top:1px solid var(--line-dark);
+  }
+  @media (max-width:900px){ .pgrid{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:600px){ .pgrid{grid-template-columns:repeat(2,1fr);} }
+
+  .wgrid{
+    display:grid; grid-template-columns:repeat(5, 1fr); gap:8px;
+  }
+  .wgrid .thumb{
+    aspect-ratio:1/1; overflow:hidden; background:var(--iron-2); border:1px solid var(--line-dark);
+  }
+  .wgrid .thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  @media (max-width:900px){ .wgrid{grid-template-columns:repeat(4,1fr);} }
+  @media (max-width:600px){ .wgrid{grid-template-columns:repeat(3,1fr);} }
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;}
+  .about-grid h2{font-size:clamp(1.9rem,3.4vw,2.6rem); margin-bottom:20px;}
+  .about-grid p{color:var(--steel); margin-bottom:14px; max-width:52ch;}
+  .capsule-list{list-style:none; margin-top:22px;}
+  .capsule-list li{
+    padding:14px 0; border-top:1px solid var(--line-dark);
+    display:flex; gap:14px; align-items:baseline; font-size:0.94rem;
+  }
+  .capsule-list li:last-child{border-bottom:1px solid var(--line-dark);}
+  .capsule-list li .mk{color:var(--glow-dim); font-weight:700; font-family:'Barlow Condensed';}
+
+  .materials{
+    border:1px solid var(--line-dark); padding:28px;
+    background:var(--paper-2);
+  }
+  .materials h4{font-size:0.82rem; text-transform:none; color:var(--steel); font-weight:600; margin-bottom:16px; font-family:'Work Sans';}
+  .tagset{display:flex; flex-wrap:wrap; gap:10px;}
+  .tagset span{
+    border:1px solid var(--line-dark); padding:7px 14px; font-size:0.85rem; background:var(--paper);
+  }
+
+  /* ---------- INVENTORY / PARTS AVAILABLE ---------- */
+  .inv-grid{
+    display:grid; grid-template-columns:repeat(4, 1fr); gap:1px;
+    background:var(--line-dark); border:1px solid var(--line-dark);
+  }
+  .inv-card{ background:var(--paper); }
+  .inv-thumb{ aspect-ratio:1/1; overflow:hidden; background:var(--iron-2); }
+  .inv-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .inv-body{ padding:12px 14px 14px; }
+  .inv-name{ font-size:0.86rem; font-weight:600; margin-bottom:10px; color:var(--iron); }
+  .inv-btn{
+    display:block; text-align:center; padding:8px 10px;
+    background:var(--glow); color:var(--iron); font-weight:600; font-size:0.82rem;
+    border:1px solid var(--glow);
+  }
+  .inv-btn:hover{ background:transparent; color:var(--glow-dim); }
+  @media (max-width:900px){ .inv-grid{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:600px){ .inv-grid{grid-template-columns:repeat(2,1fr);} }
+
+  /* ---------- MARKET PULSE ---------- */
+  .pulse-grid{
+    display:grid; grid-template-columns:1.3fr 1fr; gap:1px;
+    background:var(--line-dark); border:1px solid var(--line-dark);
+  }
+  .pulse-card{
+    background:var(--paper); padding:28px;
+  }
+  .poll-options{display:flex; flex-direction:column; gap:12px;}
+  .poll-btn{
+    display:flex; align-items:center; gap:10px;
+    background:none; border:1px solid var(--line-dark);
+    padding:10px 12px; cursor:pointer; text-align:left;
+    font-family:'Work Sans', sans-serif;
+    transition:border-color 0.2s;
+  }
+  .poll-btn:hover{border-color:var(--glow-dim);}
+  .poll-btn.voted{border-color:var(--glow); background:rgba(217,100,44,0.05);}
+  .poll-label{flex:0 0 150px; font-size:0.85rem; color:var(--iron); font-weight:500;}
+  .poll-bar-track{
+    flex:1; height:8px; background:var(--paper-2); position:relative; overflow:hidden;
+  }
+  .poll-bar-fill{
+    display:block; height:100%; width:0%; background:var(--glow);
+    transition:width 0.5s ease;
+  }
+  .poll-pct{flex:0 0 40px; text-align:right; font-size:0.8rem; color:var(--steel); font-weight:600;}
+
+  /* ---------- CONTACT ---------- */
+  .contact{
+    background:var(--iron); color:var(--paper);
+  }
+  .contact .section-head p{color:var(--steel-light);}
+  .contact .section-head{border-bottom:1px solid var(--line);}
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px;}
+  .contact-list{list-style:none;}
+  .contact-list li{
+    display:flex; gap:18px; padding:20px 0; border-top:1px solid var(--line);
+  }
+  .contact-list li:last-child{border-bottom:1px solid var(--line);}
+  .contact-list .lbl{width:110px; flex-shrink:0; font-size:0.8rem; color:var(--steel-light);}
+  .contact-list .val{font-size:1.05rem; font-family:'Barlow Condensed'; font-weight:600; letter-spacing:0.01em;}
+  .contact-list a.val:hover{color:var(--glow);}
+
+  .cta-box{
+    border:1px solid var(--line); padding:32px; background:rgba(238,236,230,0.03);
+    display:flex; flex-direction:column; justify-content:center;
+  }
+  .cta-box h3{font-size:1.7rem; margin-bottom:12px;}
+  .cta-box p{color:var(--steel-light); margin-bottom:24px; font-size:0.95rem;}
+
+  @media (max-width:800px){ .contact-grid, .about-grid{grid-template-columns:1fr;} }
+
+  footer{
+    background:var(--iron); color:var(--steel-light); font-size:0.82rem;
+    padding:20px 0; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+
+  /* ---------- HERO — SEARCH FORMAT ---------- */
+  .hero{
+    background:
+      radial-gradient(ellipse 900px 500px at 82% -10%, rgba(217,100,44,0.16), transparent 60%),
+      linear-gradient(180deg, var(--iron) 0%, var(--iron-2) 100%);
+    color:var(--paper);
+    padding:64px 0 56px;
+    position:relative;
+    overflow:hidden;
+    border-bottom:1px solid var(--line);
+    min-height:0;
+  }
+  .hero::after{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(238,236,230,0.03) 0 1px, transparent 1px 64px),
+      repeating-linear-gradient(90deg, rgba(238,236,230,0.03) 0 1px, transparent 1px 64px);
+    pointer-events:none;
+    z-index:0;
+  }
+  .hero-search-wrap{position:relative; z-index:1; max-width:720px; margin:0 auto; text-align:center;}
+  .hero-mark{display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:6px;}
+  .hero-mark .dot{width:9px; height:9px; background:var(--glow); border-radius:50%;}
+  .hero-search-wrap .hero-eyebrow{
+    font-size:0.78rem; color:var(--glow); font-weight:600;
+    margin-bottom:10px; letter-spacing:0.03em; text-align:center;
+  }
+  .hero-search-wrap h1{
+    font-size:clamp(2rem, 4.6vw, 3.1rem);
+    color:var(--paper);
+    text-shadow:0 2px 12px rgba(0,0,0,0.5);
+  }
+  .hero-search-wrap h1 em{font-style:normal; color:var(--glow);}
+  .hero-search-wrap p.lead{
+    margin:14px auto 0; max-width:50ch; font-size:1rem; color:var(--steel-light);
+  }
+
+  .search-box{
+    margin:30px auto 0; max-width:600px;
+    display:flex; align-items:center; gap:10px;
+    background:var(--paper); border:1px solid var(--line-dark);
+    border-radius:999px; padding:6px 8px 6px 22px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
+  }
+  .search-box svg{flex-shrink:0; color:var(--steel);}
+  .search-box input{
+    flex:1; border:none; outline:none; background:none;
+    font-family:'Work Sans', sans-serif; font-size:1rem; color:var(--iron);
+    padding:12px 0;
+  }
+  .search-box input::placeholder{color:var(--steel-light);}
+  .search-box button{
+    border:none; background:var(--glow); color:var(--iron);
+    font-weight:600; font-size:0.9rem; padding:12px 22px;
+    border-radius:999px; cursor:pointer; white-space:nowrap;
+  }
+  .search-box button:hover{background:var(--glow-dim);}
+
+  .search-chips{
+    display:flex; flex-wrap:wrap; gap:9px; justify-content:center;
+    margin-top:16px;
+  }
+  .search-chips button{
+    border:1px solid var(--line); background:rgba(238,236,230,0.05); color:var(--paper);
+    font-size:0.82rem; padding:7px 15px; border-radius:999px; cursor:pointer;
+    font-family:'Work Sans', sans-serif;
+  }
+  .search-chips button:hover{border-color:var(--glow); color:var(--glow);}
+
+  .hero-actions{display:flex; gap:14px; margin-top:24px; flex-wrap:wrap; justify-content:center;}
+  .btn{
+    display:inline-block; padding:13px 26px; font-weight:600; font-size:0.95rem;
+    border:1px solid var(--glow);
+  }
+  .btn-solid{background:var(--glow); color:var(--iron);}
+  .btn-solid:hover{background:var(--glow-dim); border-color:var(--glow-dim);}
+  .btn-outline{color:var(--paper); border-color:var(--line);}
+  .btn-outline:hover{border-color:var(--paper);}
+
+  /* Contained (not full-screen) video frame — sits under the search, comfortable on laptop & mobile */
+  .hero-video-frame{
+    position:relative; z-index:1;
+    max-width:820px; margin:38px auto 0;
+    border-radius:16px; overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:0 20px 50px rgba(0,0,0,0.4);
+    aspect-ratio:16/7;
+    background:var(--iron-2);
+  }
+  .hero-video-frame video{
+    width:100%; height:100%; object-fit:cover; display:block;
+  }
+  .hero-video-frame .frame-caption{
+    position:absolute; left:16px; bottom:14px;
+    background:rgba(15,16,17,0.55); backdrop-filter:blur(3px);
+    color:var(--paper); font-size:0.76rem; padding:6px 12px;
+    border-radius:999px; border:1px solid rgba(238,236,230,0.18);
+  }
+  @media (max-width:700px){
+    .hero{padding:44px 0 40px;}
+    .search-box{flex-wrap:wrap; border-radius:20px; padding:14px;}
+    .search-box input{width:100%; padding:6px 4px;}
+    .search-box button{width:100%; text-align:center;}
+    .hero-video-frame{aspect-ratio:4/5; max-height:340px; margin-top:28px; border-radius:12px;}
+  }
+
+  /* ---------- TRUST STRIP ---------- */
+  .trust-strip{background:var(--paper-2); border-bottom:1px solid var(--line-dark); padding:36px 0;}
+  .trust-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
+  .trust-item{display:flex; align-items:center; gap:14px;}
+  .trust-item .ic{
+    flex-shrink:0; width:44px; height:44px; border-radius:50%;
+    background:var(--paper); border:1px solid var(--line-dark);
+    display:flex; align-items:center; justify-content:center; color:var(--glow-dim);
+  }
+  .trust-item .tt{font-family:'Barlow Condensed'; font-size:1.05rem; font-weight:700; color:var(--iron); line-height:1.15;}
+  .trust-item .ts{font-size:0.78rem; color:var(--steel);}
+  @media (max-width:900px){ .trust-grid{grid-template-columns:repeat(2,1fr);} }
+
+  /* ---------- PRODUCT VIEW TABS (photo / drawing / cross-section in one frame) ---------- */
+  .view-card{ background:var(--paper); display:flex; flex-direction:column; }
+  .view-stage{
+    aspect-ratio:1/1; position:relative; overflow:hidden; background:var(--iron-2);
+  }
+  .view-pane{
+    position:absolute; inset:0; display:none;
+    align-items:center; justify-content:center;
+  }
+  .view-pane.active{display:flex;}
+  .view-pane img{width:100%; height:100%; object-fit:cover; display:block;}
+  .view-pane.draw, .view-pane.section{background:#0f2338;}
+  .view-tabs{
+    display:flex; border-top:1px solid var(--line-dark); border-bottom:1px solid var(--line-dark);
+  }
+  .view-tabs button{
+    flex:1; border:none; background:var(--paper-2); color:var(--steel);
+    font-family:'Work Sans'; font-size:0.7rem; font-weight:600; letter-spacing:0.02em;
+    padding:8px 4px; cursor:pointer; border-right:1px solid var(--line-dark);
+  }
+  .view-tabs button:last-child{border-right:none;}
+  .view-tabs button.active{background:var(--paper); color:var(--glow-dim);}
+  .view-card .cap{
+    padding:12px 14px 4px; font-size:0.86rem; font-weight:600;
+  }
+  .view-card .vprice{
+    padding:0 14px 12px; font-size:0.8rem; color:var(--steel);
+  }
+  .view-card .vprice b{color:var(--iron); font-family:'Barlow Condensed'; font-size:0.98rem;}
+  .view-card .vfoot{ padding:0 14px 14px; display:flex; gap:8px; }
+  .qty-check{
+    display:flex; align-items:center; gap:6px; font-size:0.78rem; color:var(--steel);
+    border:1px solid var(--line-dark); padding:8px 10px; cursor:pointer; user-select:none;
+  }
+  .qty-check input{accent-color:var(--glow); width:14px; height:14px;}
+
+  /* ---------- PRICE LIST ---------- */
+  .price-note{
+    border:1px solid var(--line-dark); background:var(--paper-2);
+    padding:14px 18px; font-size:0.85rem; color:var(--steel); margin-bottom:24px;
+  }
+  .price-table{width:100%; border-collapse:collapse; border:1px solid var(--line-dark);}
+  .price-table th{
+    text-align:left; font-family:'Work Sans'; font-size:0.76rem; letter-spacing:0.02em;
+    color:var(--steel); font-weight:600; padding:12px 16px; background:var(--paper-2);
+    border-bottom:1px solid var(--line-dark);
+  }
+  .price-table td{
+    padding:14px 16px; border-bottom:1px solid var(--line-dark); font-size:0.92rem; vertical-align:middle;
+  }
+  .price-table tr:last-child td{border-bottom:none;}
+  .price-table .pname{font-weight:600; color:var(--iron);}
+  .price-table .prange{font-family:'Barlow Condensed'; font-size:1.05rem; font-weight:700; color:var(--glow-dim); white-space:nowrap;}
+  .price-table .pmoq{color:var(--steel); font-size:0.82rem;}
+  .price-table .prow-btn{
+    display:inline-block; padding:8px 14px; font-size:0.8rem; font-weight:600;
+    border:1px solid var(--iron); color:var(--iron); white-space:nowrap;
+  }
+  .price-table .prow-btn:hover{background:var(--iron); color:var(--paper);}
+  @media (max-width:700px){
+    .price-table thead{display:none;}
+    .price-table, .price-table tbody, .price-table tr, .price-table td{display:block; width:100%;}
+    .price-table tr{border-bottom:1px solid var(--line-dark); padding:14px 4px;}
+    .price-table td{border:none; padding:4px 12px;}
+    .price-table td::before{content:attr(data-lbl); display:block; font-size:0.7rem; color:var(--steel); margin-bottom:2px;}
+  }
+
+  /* ---------- QUOTE CART BAR ---------- */
+  .quote-bar{
+    position:fixed; left:0; right:0; bottom:0; z-index:60;
+    background:var(--iron); color:var(--paper); border-top:1px solid var(--line);
+    transform:translateY(120%); transition:transform 0.3s ease;
+    box-shadow:0 -8px 30px rgba(0,0,0,0.3);
+  }
+  .quote-bar.show{transform:translateY(0);}
+  .quote-bar .wrap{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 28px;}
+  .quote-bar .qb-count{font-size:0.9rem;}
+  .quote-bar .qb-count b{color:var(--glow); font-family:'Barlow Condensed'; font-size:1.2rem;}
+  .quote-bar .qb-actions{display:flex; gap:10px;}
+  .quote-bar .qb-clear{
+    background:none; border:1px solid var(--line); color:var(--paper);
+    font-size:0.82rem; padding:9px 14px; cursor:pointer;
+  }
+  @media (max-width:600px){ .quote-bar .wrap{padding:12px 16px; flex-wrap:wrap;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span>⚡ Response within 24 hrs</span>
+      <span>📦 Bulk &amp; repeat orders welcome</span>
+      <span>📍 Kanpur, Uttar Pradesh</span>
+    </div>
+  </div>
+  <div class="wrap nav">
+    <div class="brand">
+      <span class="name">SHIV FOUNDRY TRADERS</span>
+      <span class="tag">CASTING &amp; ENGINEERING PARTS · KANPUR</span>
+    </div>
+    <nav class="navlinks" id="navlinks">
+      <a href="#services">Products</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#inventory">Parts Available</a>
+      <a href="#price-list">Price List</a>
+      <a href="#about">About</a>
+      <a href="#market-pulse">Market Pulse</a>
+      <a href="#drawing">Drawing</a>
+      <a href="#materials">Materials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="navcta">Get a Quote</a>
+    <button class="burger" id="burgerBtn" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-search-wrap">
+    <div class="hero-mark"><span class="dot"></span><span class="hero-eyebrow">REPAIR · MAINTENANCE · NEW MANUFACTURING · ASSEMBLY</span></div>
+    <h1>Built to spec, <em>cast to last.</em></h1>
+    <p class="lead">Search our catalog of tools and cast parts, or tell us what you need — bearings, pistons, impellers, wheels and precision patterns, sourced through trusted foundries around Kanpur.</p>
+
+    <form class="search-box" id="partSearchForm" role="search" aria-label="Search parts">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.6" y2="16.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="text" id="partSearchInput" placeholder="Search 100+ parts — e.g. bush, impeller, casting…" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+    <div class="search-chips">
+      <button type="button" data-q="bush">Bushes</button>
+      <button type="button" data-q="impeller">Impellers</button>
+      <button type="button" data-q="casting">Casting</button>
+      <button type="button" data-q="shaft">Shafts</button>
+      <button type="button" data-q="plate">MS Plate</button>
+      <button type="button" data-q="pulley">Pulleys</button>
+    </div>
+    <div class="hero-actions">
+      <a href="#price-list" class="btn btn-solid">View price list</a>
+      <a href="https://wa.me/919621329042" class="btn btn-outline" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero-video-frame">
+      <video id="heroVideo" autoplay muted playsinline preload="metadata" webkit-playsinline="true">
+        <source src="hero-video-1.mp4" type="video/mp4">
+      </video>
+      <span class="frame-caption">Live from the workshop floor</span>
+    </div>
+  </div>
+</section>
+
+<section class="trust-strip">
+  <div class="wrap trust-grid">
+    <div class="trust-item">
+      <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M2 12l4-4 4 3 4-6 4 5 4-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 18h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+      <div><div class="tt">100+ parts</div><div class="ts">Live in our catalog</div></div>
+    </div>
+    <div class="trust-item">
+      <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M2 13l4 4 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 6l4 4 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.4" opacity="0.3"/></svg></span>
+      <div><div class="tt">Workshops &amp; dealers</div><div class="ts">Trusted across Kanpur</div></div>
+    </div>
+    <div class="trust-item">
+      <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+      <div><div class="tt">24-hr response</div><div class="ts">On every enquiry</div></div>
+    </div>
+    <div class="trust-item">
+      <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="13" height="9" rx="1" stroke="currentColor" stroke-width="2"/><path d="M15 10h4l3 3v3h-7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="1.6" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="18" r="1.6" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      <div><div class="tt">Bulk &amp; repeat</div><div class="ts">Orders welcome</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <div class="item"><div class="big">09+</div><div class="lbl">Product lines manufactured</div></div>
+    <div class="item"><div class="big">2</div><div class="lbl">Casting alloys — steel &amp; C.I.</div></div>
+    <div class="item"><div class="big">100%</div><div class="lbl">In-house pattern making</div></div>
+    <div class="item"><div class="big">KNP</div><div class="lbl">Based in Kanpur Nagar</div></div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">WHAT WE SUPPLY</div>
+        <h2>Every part, every process.</h2>
+      </div>
+      <p>From raw pattern to finished component — bearings, rotating parts and structural fabrication, sourced to your drawing or sample.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>White Metal Bearings</h3>
+        <p>Precision-poured white metal (babbitt) bearings, sourced to size for industrial machinery and engines.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Pistons</h3>
+        <p>Pistons sourced to exact bore and tolerance specifications for a range of engine and pump applications.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Piston Cylinders</h3>
+        <p>Cylinder liners and piston cylinder assemblies, machined and finished to fit specification.</p>
+      </div>
+      <div class="card">
+        <div class="num">04</div>
+        <h3>Metalization</h3>
+        <p>Metal spray coating arranged for worn shafts, housings and components — restoring dimension and wear resistance.</p>
+      </div>
+      <div class="card">
+        <div class="num">05</div>
+        <h3>Wheels — All Types</h3>
+        <p>Cast and fabricated wheels of various sizes and profiles, for industrial and material-handling use.</p>
+      </div>
+      <div class="card">
+        <div class="num">06</div>
+        <h3>Impellers</h3>
+        <p>Impellers cast and machined for pumps and blowers, sourced to your existing sample or drawing.</p>
+      </div>
+      <div class="card">
+        <div class="num">07</div>
+        <h3>General Fabrication</h3>
+        <p>Every type of steel fabrication work — structural, custom brackets, frames and job-work — arranged through our fabrication partners.</p>
+      </div>
+      <div class="card">
+        <div class="num">08</div>
+        <h3>Steel &amp; C.I. Casting</h3>
+        <p>Steel and cast iron (C.I.) foundry work for components of any size or shape, through our foundry partners.</p>
+      </div>
+      <div class="card">
+        <div class="num">09</div>
+        <h3>Pattern Making</h3>
+        <p>All types of wooden and metal patterns, made to order and supplied directly or used at the casting workshop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">WHAT WE SUPPLY</div>
+        <h2>Every part, three ways.</h2>
+      </div>
+      <p>Tap a tab on any card to switch between the real photo, the 2D technical drawing, and a cross-section — all in one frame.</p>
+    </div>
+
+    <div class="pgrid" id="productGrid"></div>
+
+    <div style="margin-top:48px;">
+      <h3 style="font-size:1.3rem; margin-bottom:16px; color:var(--steel);">More from our partner workshops</h3>
+      <div class="wgrid">
+        <div class="thumb"><img src="workshop-19.jpg" alt="Steel plates" loading="lazy"></div>
+        <div class="thumb"><img src="workshop-20.jpg" alt="Cast wheels" loading="lazy"></div>
+        <div class="thumb"><img src="workshop-21.jpg" alt="Fabrication" loading="lazy"></div>
+        <div class="thumb"><img src="workshop-22.jpg" alt="Cast bracket" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="inventory">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">PARTS AVAILABLE</div>
+        <h2>Browse and enquire.</h2>
+      </div>
+      <p>Tick the parts you need and send one combined quote request, or tap a single "Enquire" for that part on WhatsApp.</p>
+    </div>
+    <div class="inv-grid" id="inventoryGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="price-list" style="background:var(--paper-2); border-top:1px solid var(--line-dark); border-bottom:1px solid var(--line-dark);">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">PRICE LIST</div>
+        <h2>Indicative pricing.</h2>
+      </div>
+      <p>Starting prices for reference — final cost depends on size, material grade and quantity.</p>
+    </div>
+    <div class="price-note">Prices below are indicative starting rates per piece, meant as a guide. Share your drawing, sample or size to get an exact quote — tap "Request quote" on any row, or use the tick-boxes above to send a combined enquiry.</div>
+    <table class="price-table">
+      <thead><tr><th>Part</th><th>Material</th><th>Starting from</th><th>MOQ</th><th></th></tr></thead>
+      <tbody id="priceListBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<div class="quote-bar" id="quoteBar">
+  <div class="wrap">
+    <div class="qb-count"><b id="qbCount">0</b> part<span id="qbPlural">s</span> selected for quote</div>
+    <div class="qb-actions">
+      <button class="qb-clear" id="qbClear" type="button">Clear</button>
+      <a class="btn btn-solid" id="qbSend" href="#" target="_blank" rel="noopener">Send quote request</a>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="about" style="background:var(--paper-2); border-top:1px solid var(--line-dark); border-bottom:1px solid var(--line-dark);">
+  <div class="wrap about-grid">
+    <div>
+      <div class="kicker">ABOUT US</div>
+      <h2>Your single point of contact for casting and fabrication.</h2>
+      <p>Shiv Foundry Traders takes your order and places it with the right foundry, pattern maker or fabrication workshop from our network around Kanpur — so you deal with one contact instead of chasing multiple vendors.</p>
+      <p>We work directly from customer drawings, samples, or worn parts that need to be replaced, and take on both one-off jobs and repeat orders, following the job through casting, machining and delivery.</p>
+    </div>
+    <div>
+      <ul class="capsule-list">
+        <li><span class="mk">01</span> Pattern to casting, coordinated end-to-end</li>
+        <li><span class="mk">02</span> Steel and cast iron foundry network</li>
+        <li><span class="mk">03</span> Custom sizes made to drawing or sample</li>
+        <li><span class="mk">04</span> Metalization for worn-part restoration</li>
+        <li><span class="mk">05</span> One contact for fabrication and machining</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="strip" style="padding:48px 0;">
+  <div class="wrap" style="display:block;">
+    <div style="max-width:700px;">
+      <div class="kicker" style="color:var(--glow);">FOR WORKSHOPS, DEALERS &amp; INDUSTRIES</div>
+      <h2 style="font-size:clamp(1.7rem,3vw,2.3rem); margin-bottom:14px;">Bulk orders and repeat business welcome.</h2>
+      <p style="color:var(--steel-light); font-size:1rem; margin-bottom:26px;">Whether it's a one-off repair, ongoing maintenance supply, a new part to manufacture, or an assembly job — reach out with your requirement and quantity. We coordinate with our network of foundries and workshops to deliver on time, every time.</p>
+      <div class="hero-actions" style="margin-top:0;">
+        <a href="https://wa.me/919621329042" class="btn btn-solid" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="market-pulse">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">MARKET PULSE</div>
+        <h2>What the trade is asking for.</h2>
+      </div>
+      <p>An indicative look at current demand across our product categories, and what visitors are asking us for most.</p>
+    </div>
+
+    <div class="pulse-grid">
+      <div class="pulse-card">
+        <h3 style="font-size:1.1rem; margin-bottom:18px; color:var(--iron);">Demand vs. Supply capacity</h3>
+        <svg viewBox="0 0 460 260" width="100%" height="auto">
+          <line x1="60" y1="20" x2="60" y2="220" stroke="var(--line-dark)" stroke-width="1"/>
+          <line x1="60" y1="220" x2="440" y2="220" stroke="var(--line-dark)" stroke-width="1"/>
+          <!-- Bearings -->
+          <rect x="80" y="70" width="18" height="150" fill="var(--glow)"/>
+          <rect x="100" y="100" width="18" height="120" fill="var(--steel)"/>
+          <text x="80" y="235" font-size="10" fill="var(--steel)" font-family="sans-serif">Bearings</text>
+          <!-- Pistons -->
+          <rect x="160" y="90" width="18" height="130" fill="var(--glow)"/>
+          <rect x="180" y="120" width="18" height="100" fill="var(--steel)"/>
+          <text x="162" y="235" font-size="10" fill="var(--steel)" font-family="sans-serif">Pistons</text>
+          <!-- Impellers -->
+          <rect x="240" y="60" width="18" height="160" fill="var(--glow)"/>
+          <rect x="260" y="110" width="18" height="110" fill="var(--steel)"/>
+          <text x="235" y="235" font-size="10" fill="var(--steel)" font-family="sans-serif">Impellers</text>
+          <!-- Casting -->
+          <rect x="320" y="50" width="18" height="170" fill="var(--glow)"/>
+          <rect x="340" y="85" width="18" height="135" fill="var(--steel)"/>
+          <text x="318" y="235" font-size="10" fill="var(--steel)" font-family="sans-serif">Casting</text>
+        </svg>
+        <div style="display:flex; gap:20px; margin-top:6px; font-size:0.8rem; color:var(--steel);">
+          <span><span style="display:inline-block; width:10px; height:10px; background:var(--glow); margin-right:6px; border-radius:2px;"></span>Demand</span>
+          <span><span style="display:inline-block; width:10px; height:10px; background:var(--steel); margin-right:6px; border-radius:2px;"></span>Our supply capacity</span>
+        </div>
+        <p style="font-size:0.78rem; color:var(--steel); margin-top:14px;">Indicative trend based on recent enquiries — not live sales data.</p>
+      </div>
+
+      <div class="pulse-card">
+        <h3 style="font-size:1.1rem; margin-bottom:6px; color:var(--iron);">Quick poll</h3>
+        <p style="font-size:0.85rem; color:var(--steel); margin-bottom:18px;">What do you need most right now?</p>
+        <div id="pollOptions" class="poll-options">
+          <button class="poll-btn" data-option="repair">
+            <span class="poll-label">Repair &amp; Maintenance</span>
+            <span class="poll-bar-track"><span class="poll-bar-fill"></span></span>
+            <span class="poll-pct">0%</span>
+          </button>
+          <button class="poll-btn" data-option="new">
+            <span class="poll-label">New Manufacturing</span>
+            <span class="poll-bar-track"><span class="poll-bar-fill"></span></span>
+            <span class="poll-pct">0%</span>
+          </button>
+          <button class="poll-btn" data-option="bulk">
+            <span class="poll-label">Bulk Order</span>
+            <span class="poll-bar-track"><span class="poll-bar-fill"></span></span>
+            <span class="poll-pct">0%</span>
+          </button>
+          <button class="poll-btn" data-option="assembly">
+            <span class="poll-label">Assembly Job</span>
+            <span class="poll-bar-track"><span class="poll-bar-fill"></span></span>
+            <span class="poll-pct">0%</span>
+          </button>
+        </div>
+        <p id="pollNote" style="font-size:0.78rem; color:var(--steel); margin-top:14px;">Tap an option to vote — see what others need too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="drawing" style="background:var(--paper-2); border-top:1px solid var(--line-dark); border-bottom:1px solid var(--line-dark);">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">DRAWING &amp; DESIGN SUPPORT</div>
+        <h2>From drawing to finished part.</h2>
+      </div>
+      <p>Send us a 2D drawing, a 3D model, or just a sample — we coordinate the design and manufacturing end-to-end.</p>
+    </div>
+    <div class="grid" style="grid-template-columns:repeat(2,1fr);">
+      <div class="card">
+        <svg width="44" height="44" viewBox="0 0 48 48" fill="none" style="margin-bottom:14px;">
+          <rect x="6" y="6" width="36" height="36" stroke="var(--glow)" stroke-width="2"/>
+          <line x1="6" y1="16" x2="42" y2="16" stroke="var(--steel)" stroke-width="1.5"/>
+          <line x1="16" y1="16" x2="16" y2="42" stroke="var(--steel)" stroke-width="1.5"/>
+          <circle cx="29" cy="29" r="6" stroke="var(--iron)" stroke-width="1.5"/>
+          <line x1="11" y1="11" x2="14" y2="11" stroke="var(--iron)" stroke-width="1"/>
+          <line x1="11" y1="11" x2="11" y2="14" stroke="var(--iron)" stroke-width="1"/>
+        </svg>
+        <h3>2D Drawings</h3>
+        <p>Share a scanned drawing, PDF, or hand sketch with dimensions — we get it read and manufactured to exact tolerance by our partner workshops.</p>
+      </div>
+      <div class="card">
+        <svg width="44" height="44" viewBox="0 0 48 48" fill="none" style="margin-bottom:14px;">
+          <path d="M24 6 L42 16 L42 34 L24 44 L6 34 L6 16 Z" stroke="var(--glow)" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M24 6 L24 24 M24 24 L42 16 M24 24 L6 16 M24 24 L24 44" stroke="var(--steel)" stroke-width="1.5"/>
+        </svg>
+        <h3>3D Models</h3>
+        <p>Have a 3D CAD file or reference model? Send it across — we'll match it to the right pattern, casting and machining process for production.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="materials">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">MATERIALS &amp; CAPABILITY</div>
+        <h2>Worked to order.</h2>
+      </div>
+      <p>Let us know the material, size and quantity — we'll quote against your drawing or an existing sample.</p>
+    </div>
+    <div class="materials">
+      <h4>Materials &amp; processes we work with</h4>
+      <div class="tagset">
+        <span>White metal / Babbitt</span>
+        <span>Cast Iron (C.I.)</span>
+        <span>Steel casting</span>
+        <span>Metal spray / Metalization</span>
+        <span>Mild steel fabrication</span>
+        <span>Wooden patterns</span>
+        <span>Metal patterns</span>
+        <span>Custom machining</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap section" style="padding-bottom:64px;">
+    <div class="section-head">
+      <div>
+        <div class="kicker" style="color:var(--glow);">GET IN TOUCH</div>
+        <h2>Send us your drawing or sample.</h2>
+      </div>
+      <p>Message us on WhatsApp or email — we'll get back with a quote and timeline.</p>
+    </div>
+    <div class="contact-grid">
+      <ul class="contact-list">
+        <li>
+          <span class="lbl">Firm</span>
+          <span class="val">Shiv Foundry Traders</span>
+        </li>
+        <li>
+          <span class="lbl">WhatsApp</span>
+          <a href="https://wa.me/919621329042" class="val" target="_blank" rel="noopener">96213 29042</a>
+        </li>
+        <li>
+          <span class="lbl">WhatsApp</span>
+          <a href="https://wa.me/917518297168" class="val" target="_blank" rel="noopener">75182 97168</a>
+        </li>
+        <li>
+          <span class="lbl">Email</span>
+          <a href="mailto:sumit208005@gmail.com" class="val">sumit208005@gmail.com</a>
+        </li>
+        <li>
+          <span class="lbl">Address</span>
+          <span class="val" style="font-size:0.95rem; line-height:1.4;">New Highway City, Kanpur Nagar, Uttar Pradesh</span>
+        </li>
+      </ul>
+      <div class="cta-box">
+        <h3>Ready to place an order?</h3>
+        <p>Share your part drawing, sample, or requirement — repair, maintenance, new manufacturing or assembly — and we'll respond with a quote. Bulk orders welcome.</p>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <a href="https://wa.me/919621329042" class="btn btn-solid" style="text-align:center;" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a href="mailto:sumit208005@gmail.com" class="btn btn-outline" style="text-align:center;">Email your requirement</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:8px;">
+    <span>© <span id="year"></span> Shiv Foundry Traders, Kanpur Nagar</span>
+    <span>Sourcing · Casting · Fabrication · Patterns</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const burger = document.getElementById('burgerBtn');
+  const navlinks = document.getElementById('navlinks');
+  burger.addEventListener('click', () => navlinks.classList.toggle('open'));
+  navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navlinks.classList.remove('open')));
+
+  // Rotate through the 4 hero videos inside the contained frame, one after another, looping back to the first
+  const heroVideos = ['hero-video-1.mp4', 'hero-video-2.mp4', 'hero-video-3.mp4', 'hero-video-4.mp4'];
+  let heroVideoIndex = 0;
+  const heroVideoEl = document.getElementById('heroVideo');
+  if (heroVideoEl) {
+    heroVideoEl.addEventListener('ended', () => {
+      heroVideoIndex = (heroVideoIndex + 1) % heroVideos.length;
+      heroVideoEl.src = heroVideos[heroVideoIndex];
+      heroVideoEl.play();
+    });
+  }
+
+  /* =========================================================
+     PRODUCT CATALOG — edit this array to change names, prices,
+     material or MOQ. "price" and "moq" are example placeholders —
+     replace with your real rates.
+     ========================================================= */
+  const WA_NUM = '919621329042';
+  const PRODUCTS = [
+    { name:'Pump Impeller',            img:'pump-impeller.jpg',            material:'C.I. / Bronze', price:'₹950',   moq:'1 pc',  section:'disc',  draw:'M100 82 L130 30 M100 82 L155 100 M100 82 L130 170 M100 82 L70 170 M100 82 L45 100 M100 82 L70 30|C100,100,85|C100,100,18|L100,15,100,82|T104,45,R85' },
+    { name:'Pump Casting',             img:'pump-casting.jpg',             material:'C.I.',           price:'₹1,200', moq:'1 pc',  section:'block' },
+    { name:'End Cover',                img:'end-cover.jpg',                material:'C.I.',           price:'₹450',   moq:'1 pc',  section:'disc' },
+    { name:'Bush',                     img:'bush.jpg',                     material:'C.I. / Brass',   price:'₹150',   moq:'2 pcs', section:'ring' },
+    { name:'Shaft',                    img:'shaft.jpg',                    material:'MS / EN8',       price:'₹600',   moq:'1 pc',  section:'bar' },
+    { name:'Housing',                  img:'housing.jpg',                  material:'C.I.',           price:'₹2,200', moq:'1 pc',  section:'block' },
+    { name:'C.I. Casting Bush',        img:'ci-casting-bush.jpg',          material:'Cast Iron',      price:'₹350',   moq:'2 pcs', section:'ring' },
+    { name:'Aluminium Casting Pulley', img:'aluminium-casting-pulley.jpg', material:'Aluminium',      price:'₹700',   moq:'1 pc',  section:'disc' },
+    { name:'Brass Bush',               img:'brass-bush.jpg',               material:'Brass',          price:'₹250',   moq:'2 pcs', section:'ring' },
+    { name:'Brass Ring',               img:'brass-ring.jpg',               material:'Brass',          price:'₹180',   moq:'2 pcs', section:'ring' },
+    { name:'MS Plate',                 img:'ms-plate.jpg',                 material:'Mild Steel',     price:'₹90/kg', moq:'10 kg', section:'plate' }
+  ];
+
+  function waLink(text){ return 'https://wa.me/' + WA_NUM + '?text=' + encodeURIComponent(text); }
+
+  // Generic cross-section illustrations (schematic, not to exact CAD scale) — one hatch pattern per shape family
+  function sectionSVG(type, uid){
+    const hatchId = 'hatch' + uid;
+    const defs = '<defs><pattern id="' + hatchId + '" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">'
+      + '<line x1="0" y1="0" x2="0" y2="6" stroke="#7fb3d9" stroke-width="1.4"/></pattern></defs>';
+    let body = '';
+    if (type === 'ring') {
+      body = '<circle cx="100" cy="100" r="70" fill="url(#' + hatchId + ')" stroke="#7fb3d9" stroke-width="1.5"/>'
+        + '<circle cx="100" cy="100" r="42" fill="#0f2338" stroke="#7fb3d9" stroke-width="1.5"/>'
+        + '<line x1="100" y1="100" x2="100" y2="30" stroke="#7fb3d9" stroke-width="0.75" stroke-dasharray="4 3"/>'
+        + '<text x="103" y="60" fill="#7fb3d9" font-size="9" font-family="monospace">wall</text>';
+    } else if (type === 'disc') {
+      body = '<path d="M40 150 L40 90 Q40 60 100 55 Q160 60 160 90 L160 150 L130 150 L130 100 Q130 85 100 82 Q70 85 70 100 L70 150 Z" fill="url(#' + hatchId + ')" stroke="#7fb3d9" stroke-width="1.5"/>'
+        + '<line x1="40" y1="150" x2="160" y2="150" stroke="#7fb3d9" stroke-width="1"/>'
+        + '<text x="70" y="45" fill="#7fb3d9" font-size="9" font-family="monospace">SECTION A-A</text>';
+    } else if (type === 'block') {
+      body = '<path d="M30 160 L30 60 L170 60 L170 160 Z" fill="none" stroke="#7fb3d9" stroke-width="1.5"/>'
+        + '<path d="M30 160 L30 60 L50 60 L50 140 L150 140 L150 60 L170 60 L170 160 Z" fill="url(#' + hatchId + ')" stroke="#7fb3d9" stroke-width="1.2"/>'
+        + '<text x="65" y="45" fill="#7fb3d9" font-size="9" font-family="monospace">SECTION A-A</text>';
+    } else if (type === 'bar') {
+      body = '<rect x="70" y="20" width="60" height="160" fill="none" stroke="#7fb3d9" stroke-width="1.5"/>'
+        + '<circle cx="100" cy="35" r="30" fill="url(#' + hatchId + ')" stroke="#7fb3d9" stroke-width="1.5"/>'
+        + '<line x1="70" y1="65" x2="130" y2="65" stroke="#7fb3d9" stroke-width="1" stroke-dasharray="3 3"/>'
+        + '<text x="60" y="10" fill="#7fb3d9" font-size="9" font-family="monospace">CUT FACE</text>';
+    } else {
+      body = '<rect x="30" y="80" width="140" height="30" fill="url(#' + hatchId + ')" stroke="#7fb3d9" stroke-width="1.5"/>'
+        + '<text x="70" y="70" fill="#7fb3d9" font-size="9" font-family="monospace">SECTION A-A</text>';
+    }
+    return '<svg width="80%" height="80%" viewBox="0 0 200 200" fill="none">' + defs + body + '</svg>';
+  }
+
+  function slug(name){ return name.toLowerCase().replace(/[^a-z0-9]+/g,'-'); }
+
+  // Render the "photo / 2D drawing / cross-section" tabbed showcase cards
+  const productGrid = document.getElementById('productGrid');
+  if (productGrid) {
+    productGrid.innerHTML = PRODUCTS.map((p, i) => {
+      const id = 'v' + i;
+      return '<div class="view-card">'
+        + '<div class="view-stage">'
+          + '<div class="view-pane photo active" data-id="' + id + '" data-tab="photo"><img src="' + p.img + '" alt="' + p.name + '" loading="lazy"></div>'
+          + '<div class="view-pane draw" data-id="' + id + '" data-tab="draw">' + drawSVG(p) + '</div>'
+          + '<div class="view-pane section" data-id="' + id + '" data-tab="section">' + sectionSVG(p.section, i) + '</div>'
+        + '</div>'
+        + '<div class="view-tabs">'
+          + '<button class="active" data-id="' + id + '" data-tab="photo" type="button">PHOTO</button>'
+          + '<button data-id="' + id + '" data-tab="draw" type="button">2D DRAWING</button>'
+          + '<button data-id="' + id + '" data-tab="section" type="button">CROSS-SECTION</button>'
+        + '</div>'
+        + '<div class="cap">' + p.name + '</div>'
+        + '<div class="vprice">From <b>' + p.price + '</b> · MOQ ' + p.moq + '</div>'
+      + '</div>';
+    }).join('');
+
+    productGrid.addEventListener('click', (e) => {
+      const btn = e.target.closest('.view-tabs button');
+      if (!btn) return;
+      const card = btn.closest('.view-card');
+      card.querySelectorAll('.view-tabs button').forEach(b => b.classList.toggle('active', b === btn));
+      card.querySelectorAll('.view-pane').forEach(pn => pn.classList.toggle('active', pn.dataset.tab === btn.dataset.tab));
+    });
+  }
+
+  // Simple generic 2D outline per shape family (schematic — for exact-to-drawing work, share your own drawing/sample)
+  function drawSVG(p){
+    if (p.section === 'ring') {
+      return '<svg width="80%" height="80%" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="80" stroke="#7fb3d9" stroke-width="1.5"/><circle cx="100" cy="100" r="45" stroke="#7fb3d9" stroke-width="1.5"/><line x1="100" y1="20" x2="140" y2="20" stroke="#7fb3d9" stroke-width="1"/><text x="145" y="24" fill="#7fb3d9" font-size="9" font-family="monospace">OD/ID</text></svg>';
+    }
+    if (p.section === 'disc') {
+      return '<svg width="80%" height="80%" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="85" stroke="#7fb3d9" stroke-width="1.5"/><circle cx="100" cy="100" r="18" stroke="#7fb3d9" stroke-width="1.5"/><path d="M100 82 L130 30 M100 82 L155 100 M100 82 L130 170 M100 82 L70 170 M100 82 L45 100 M100 82 L70 30" stroke="#7fb3d9" stroke-width="1.2"/><text x="4" y="20" fill="#7fb3d9" font-size="9" font-family="monospace">Ø170</text></svg>';
+    }
+    if (p.section === 'block') {
+      return '<svg width="75%" height="75%" viewBox="0 0 200 160" fill="none"><path d="M40 130 L40 60 Q40 30 100 30 Q160 30 160 60 L160 130 Z" stroke="#7fb3d9" stroke-width="1.5"/><line x1="40" y1="130" x2="160" y2="130" stroke="#7fb3d9" stroke-width="1"/><line x1="60" y1="130" x2="60" y2="70" stroke="#7fb3d9" stroke-width="1" stroke-dasharray="3 3"/><line x1="140" y1="130" x2="140" y2="70" stroke="#7fb3d9" stroke-width="1" stroke-dasharray="3 3"/><text x="2" y="83" fill="#7fb3d9" font-size="9" font-family="monospace">100</text></svg>';
+    }
+    if (p.section === 'bar') {
+      return '<svg width="80%" height="55%" viewBox="0 0 220 110" fill="none"><rect x="20" y="45" width="180" height="20" stroke="#7fb3d9" stroke-width="1.5"/><rect x="10" y="40" width="20" height="30" stroke="#7fb3d9" stroke-width="1"/><rect x="190" y="40" width="20" height="30" stroke="#7fb3d9" stroke-width="1"/><text x="90" y="98" fill="#7fb3d9" font-size="9" font-family="monospace">L 180</text></svg>';
+    }
+    return '<svg width="80%" height="80%" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="80" stroke="#7fb3d9" stroke-width="1.5"/><path d="M40 100 Q100 60 160 100" stroke="#7fb3d9" stroke-width="1" stroke-dasharray="2 3"/><text x="75" y="12" fill="#7fb3d9" font-size="8" font-family="monospace">Ra 1.6</text></svg>';
+  }
+
+  /* ---------- QUOTE CART: tick parts, send one combined WhatsApp enquiry ---------- */
+  const cart = new Set();
+  const quoteBar = document.getElementById('quoteBar');
+  const qbCount = document.getElementById('qbCount');
+  const qbPlural = document.getElementById('qbPlural');
+  const qbSend = document.getElementById('qbSend');
+
+  function updateQuoteBar(){
+    const n = cart.size;
+    qbCount.textContent = n;
+    qbPlural.textContent = n === 1 ? '' : 's';
+    quoteBar.classList.toggle('show', n > 0);
+    if (n > 0) {
+      const list = Array.from(cart).join(', ');
+      qbSend.href = waLink('Hi, I would like a quote for: ' + list + '. Please share price, size options and availability.');
+    }
+  }
+  document.getElementById('qbClear').addEventListener('click', () => {
+    cart.clear();
+    document.querySelectorAll('.inv-check').forEach(c => c.checked = false);
+    updateQuoteBar();
+  });
+
+  // Render inventory grid — photo, price, "add to quote" checkbox, single-item enquire
+  const inventoryGrid = document.getElementById('inventoryGrid');
+  if (inventoryGrid) {
+    inventoryGrid.innerHTML = PRODUCTS.map((p, i) => {
+      return '<div class="inv-card" data-name="' + p.name.toLowerCase() + '">'
+        + '<div class="inv-thumb"><img src="' + p.img + '" alt="' + p.name + '" loading="lazy"></div>'
+        + '<div class="inv-body">'
+          + '<div class="inv-name">' + p.name + '</div>'
+          + '<div class="vprice" style="padding:0 0 8px;">From <b>' + p.price + '</b></div>'
+          + '<label class="qty-check" style="margin-bottom:8px;"><input type="checkbox" class="inv-check" data-name="' + p.name + '"> Add to quote request</label>'
+          + '<a href="' + waLink('Hi, I\'m interested in ' + p.name + '. Please share price and availability.') + '" class="inv-btn" target="_blank" rel="noopener">Enquire</a>'
+        + '</div>'
+      + '</div>';
+    }).join('');
+
+    inventoryGrid.addEventListener('change', (e) => {
+      if (!e.target.classList.contains('inv-check')) return;
+      const name = e.target.dataset.name;
+      if (e.target.checked) cart.add(name); else cart.delete(name);
+      updateQuoteBar();
+    });
+  }
+
+  // Render price list table
+  const priceListBody = document.getElementById('priceListBody');
+  if (priceListBody) {
+    priceListBody.innerHTML = PRODUCTS.map(p => {
+      return '<tr>'
+        + '<td data-lbl="Part" class="pname">' + p.name + '</td>'
+        + '<td data-lbl="Material">' + p.material + '</td>'
+        + '<td data-lbl="Starting from" class="prange">' + p.price + '</td>'
+        + '<td data-lbl="MOQ" class="pmoq">' + p.moq + '</td>'
+        + '<td data-lbl=""><a class="prow-btn" href="' + waLink('Hi, please quote ' + p.name + ' for my requirement.') + '" target="_blank" rel="noopener">Request quote</a></td>'
+      + '</tr>';
+    }).join('');
+  }
+
+  // Hero search — jumps to the inventory list and filters to matching parts
+  function filterInventory(query){
+    const q = query.trim().toLowerCase();
+    document.querySelectorAll('#inventoryGrid .inv-card').forEach(card => {
+      card.style.display = (!q || card.dataset.name.includes(q)) ? '' : 'none';
+    });
+  }
+  const partSearchForm = document.getElementById('partSearchForm');
+  const partSearchInput = document.getElementById('partSearchInput');
+  if (partSearchForm) {
+    partSearchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      filterInventory(partSearchInput.value);
+      document.getElementById('inventory').scrollIntoView({behavior:'smooth'});
+    });
+  }
+  document.querySelectorAll('.search-chips button').forEach(chip => {
+    chip.addEventListener('click', () => {
+      partSearchInput.value = chip.dataset.q;
+      filterInventory(chip.dataset.q);
+      document.getElementById('inventory').scrollIntoView({behavior:'smooth'});
+    });
+  });
+
+  // Quick poll — client-side, stored per visitor's browser
+  (function(){
+    const STORAGE_KEY = 'sft_poll_votes_v1';
+    const VOTED_KEY = 'sft_poll_voted_v1';
+    const defaultVotes = { repair: 38, new: 27, bulk: 22, assembly: 13 };
+
+    function getVotes(){
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        return raw ? JSON.parse(raw) : Object.assign({}, defaultVotes);
+      } catch(e){ return Object.assign({}, defaultVotes); }
+    }
+    function saveVotes(v){
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(v)); } catch(e){}
+    }
+    function renderPoll(){
+      const votes = getVotes();
+      const total = Object.values(votes).reduce((a,b) => a+b, 0) || 1;
+      document.querySelectorAll('.poll-btn').forEach(btn => {
+        const opt = btn.getAttribute('data-option');
+        const pct = Math.round((votes[opt] / total) * 100);
+        btn.querySelector('.poll-bar-fill').style.width = pct + '%';
+        btn.querySelector('.poll-pct').textContent = pct + '%';
+      });
+    }
+    renderPoll();
+
+    const alreadyVoted = localStorage.getItem(VOTED_KEY);
+    const pollNote = document.getElementById('pollNote');
+    if (alreadyVoted) {
+      document.querySelectorAll('.poll-btn').forEach(btn => {
+        btn.disabled = true;
+        if (btn.getAttribute('data-option') === alreadyVoted) btn.classList.add('voted');
+      });
+      if (pollNote) pollNote.textContent = 'Thanks for voting! Here is what visitors are asking for.';
+    }
+
+    document.querySelectorAll('.poll-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (localStorage.getItem(VOTED_KEY)) return;
+        const opt = btn.getAttribute('data-option');
+        const votes = getVotes();
+        votes[opt] = (votes[opt] || 0) + 1;
+        saveVotes(votes);
+        localStorage.setItem(VOTED_KEY, opt);
+        renderPoll();
+        document.querySelectorAll('.poll-btn').forEach(b => { b.disabled = true; });
+        btn.classList.add('voted');
+        if (pollNote) pollNote.textContent = 'Thanks for voting! Here is what visitors are asking for.';
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
