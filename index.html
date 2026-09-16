@@ -265,7 +265,7 @@ section{
 }
 
 .icon-fallback{
-    display:none;
+    display:flex;
     align-items:center;
     justify-content:center;
     width:100%;
@@ -936,15 +936,15 @@ const PARTS = [
 ];
 
 const CAT_SVG = {
-"Bushes & Bearings": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="38" fill="none" stroke="#31566d" stroke-width="6"/><circle cx="50" cy="50" r="20" fill="none" stroke="#e67e22" stroke-width="6"/><circle cx="50" cy="50" r="6" fill="#31566d"/></svg>`,
-"Flanges & Collars": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="none" stroke="#31566d" stroke-width="5"/><circle cx="50" cy="50" r="14" fill="none" stroke="#31566d" stroke-width="5"/><circle cx="50" cy="18" r="5" fill="#e67e22"/><circle cx="82" cy="50" r="5" fill="#e67e22"/><circle cx="50" cy="82" r="5" fill="#e67e22"/><circle cx="18" cy="50" r="5" fill="#e67e22"/></svg>`,
-"Spacers & Rings": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="38" cy="50" r="24" fill="none" stroke="#31566d" stroke-width="6"/><circle cx="68" cy="50" r="24" fill="none" stroke="#e67e22" stroke-width="6"/></svg>`,
-"Brackets & Pulleys": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M20 80 L20 30 L70 30" fill="none" stroke="#31566d" stroke-width="8" stroke-linecap="round"/><circle cx="70" cy="55" r="18" fill="none" stroke="#e67e22" stroke-width="6"/></svg>`,
-"Pins & Fasteners": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="44" y="15" width="12" height="70" rx="6" fill="#31566d"/><circle cx="50" cy="15" r="10" fill="#e67e22"/></svg>`,
-"Washers & Nuts": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="50,12 82,30 82,68 50,86 18,68 18,30" fill="none" stroke="#31566d" stroke-width="6"/><circle cx="50" cy="49" r="16" fill="none" stroke="#e67e22" stroke-width="6"/></svg>`,
-"Bolts & Screws": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="50,10 68,20 68,40 50,50 32,40 32,20" fill="#31566d"/><rect x="43" y="48" width="14" height="42" fill="#e67e22"/><path d="M43 58 L57 58 M43 68 L57 68 M43 78 L57 78" stroke="white" stroke-width="2"/></svg>`,
-"Shafts & Sleeves": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="42" width="70" height="16" rx="8" fill="#31566d"/><rect x="35" y="30" width="30" height="40" rx="6" fill="none" stroke="#e67e22" stroke-width="5"/></svg>`,
-"Seals & Gaskets": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="36" fill="none" stroke="#e67e22" stroke-width="10"/><circle cx="50" cy="50" r="14" fill="#f5f7fa" stroke="#31566d" stroke-width="4"/></svg>`
+"Bushes & Bearings": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a7a9d"/><stop offset="1" stop-color="#1d4a68"/></linearGradient><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5a35a"/><stop offset="1" stop-color="#d9690f"/></linearGradient></defs><circle cx="50" cy="50" r="36" fill="url(#g1)"/><circle cx="50" cy="50" r="36" fill="none" stroke="#0f2c40" stroke-width="2"/><circle cx="50" cy="50" r="19" fill="url(#g2)"/><circle cx="50" cy="50" r="7" fill="#0f2c40"/><ellipse cx="40" cy="38" rx="10" ry="5" fill="#ffffff" opacity=".25"/></svg>`,
+"Flanges & Collars": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a7a9d"/><stop offset="1" stop-color="#1d4a68"/></linearGradient></defs><circle cx="50" cy="50" r="38" fill="url(#g3)"/><circle cx="50" cy="50" r="38" fill="none" stroke="#0f2c40" stroke-width="2"/><circle cx="50" cy="50" r="15" fill="#eef4f8"/><circle cx="50" cy="50" r="15" fill="none" stroke="#0f2c40" stroke-width="2"/><circle cx="50" cy="18" r="5.5" fill="#e67e22"/><circle cx="82" cy="50" r="5.5" fill="#e67e22"/><circle cx="50" cy="82" r="5.5" fill="#e67e22"/><circle cx="18" cy="50" r="5.5" fill="#e67e22"/></svg>`,
+"Spacers & Rings": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a7a9d"/><stop offset="1" stop-color="#1d4a68"/></linearGradient><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5a35a"/><stop offset="1" stop-color="#d9690f"/></linearGradient></defs><circle cx="36" cy="50" r="26" fill="url(#g4)"/><circle cx="36" cy="50" r="12" fill="#f5f7fa"/><circle cx="68" cy="50" r="20" fill="url(#g5)"/><circle cx="68" cy="50" r="9" fill="#f5f7fa"/></svg>`,
+"Brackets & Pulleys": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a7a9d"/><stop offset="1" stop-color="#1d4a68"/></linearGradient><linearGradient id="g7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5a35a"/><stop offset="1" stop-color="#d9690f"/></linearGradient></defs><path d="M22 82 L22 26 Q22 20 28 20 L68 20" fill="none" stroke="url(#g6)" stroke-width="10" stroke-linecap="round"/><circle cx="68" cy="48" r="22" fill="url(#g7)"/><circle cx="68" cy="48" r="9" fill="#f5f7fa"/><circle cx="22" cy="82" r="6" fill="#0f2c40"/></svg>`,
+"Pins & Fasteners": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g8" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5a8bad"/><stop offset="1" stop-color="#1d4a68"/></linearGradient></defs><rect x="42" y="18" width="16" height="68" rx="8" fill="url(#g8)"/><circle cx="50" cy="18" r="12" fill="#e67e22"/><ellipse cx="46" cy="30" rx="3" ry="14" fill="#ffffff" opacity=".3"/></svg>`,
+"Washers & Nuts": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g9" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a7a9d"/><stop offset="1" stop-color="#1d4a68"/></linearGradient></defs><polygon points="50,10 83,29 83,69 50,88 17,69 17,29" fill="url(#g9)" stroke="#0f2c40" stroke-width="2"/><circle cx="50" cy="49" r="17" fill="#eef4f8"/><circle cx="50" cy="49" r="17" fill="none" stroke="#e67e22" stroke-width="4"/></svg>`,
+"Bolts & Screws": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g10" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5a8bad"/><stop offset="1" stop-color="#1d4a68"/></linearGradient></defs><polygon points="50,8 70,19 70,41 50,52 30,41 30,19" fill="url(#g10)" stroke="#0f2c40" stroke-width="2"/><rect x="41" y="50" width="18" height="40" fill="#e67e22" rx="2"/><path d="M41 60 L59 60 M41 70 L59 70 M41 80 L59 80" stroke="#7c3f0a" stroke-width="2"/></svg>`,
+"Shafts & Sleeves": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g11" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a8bad"/><stop offset="1" stop-color="#1d4a68"/></linearGradient></defs><rect x="12" y="43" width="76" height="14" rx="7" fill="url(#g11)"/><rect x="34" y="28" width="32" height="44" rx="7" fill="#e67e22"/><rect x="34" y="28" width="32" height="44" rx="7" fill="none" stroke="#7c3f0a" stroke-width="2"/></svg>`,
+"Seals & Gaskets": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="g12"><stop offset="0" stop-color="#f5a35a"/><stop offset="1" stop-color="#d9690f"/></radialGradient></defs><circle cx="50" cy="50" r="38" fill="url(#g12)"/><circle cx="50" cy="50" r="16" fill="#f5f7fa" stroke="#1d4a68" stroke-width="4"/></svg>`
 };
 
 const CATEGORIES = ["All", ...new Set(PARTS.map(p => p.cat))];
@@ -1011,8 +1011,6 @@ card.className = "product";
 
 card.innerHTML = `
 <div class="product-image">
-<img src="${part.img}" alt="${part.name}"
-onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
 <span class="icon-fallback">${CAT_SVG[part.cat] || part.icon}</span>
 </div>
 <h3>${part.name}</h3>
