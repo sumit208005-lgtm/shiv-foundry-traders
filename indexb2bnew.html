@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shiv Foundry Traders | B2B Auto Components</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f7fa;
+    color:#172033;
+    line-height:1.5;
+}
+
+header{
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.navbar{
+    max-width:1150px;
+    margin:auto;
+    padding:16px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:bold;
+    color:#124d7c;
+}
+
+.logo span{
+    color:#e67e22;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#172033;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.nav-links a:hover{
+    color:#e67e22;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(110deg,#092b46,#155b82);
+    color:white;
+    padding:80px 20px;
+}
+
+.hero-container{
+    max-width:1150px;
+    margin:auto;
+}
+
+.hero h1{
+    font-size:48px;
+    max-width:750px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:680px;
+    color:#dcecf7;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 22px;
+    border-radius:7px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:22px 8px 0 0;
+}
+
+.btn-orange{
+    background:#e67e22;
+    color:white;
+}
+
+.btn-white{
+    background:white;
+    color:#124d7c;
+}
+
+/* SECTION */
+
+section{
+    padding:65px 20px;
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+.section-title p{
+    color:#667085;
+    margin-top:8px;
+}
+
+/* SEARCH BAR */
+
+.search-bar{
+    display:flex;
+    max-width:600px;
+    margin:0 auto 22px;
+    gap:10px;
+}
+
+.search-bar input{
+    flex:1;
+    padding:14px 16px;
+    border:1px solid #d7dce2;
+    border-radius:7px;
+    font-size:15px;
+}
+
+.search-bar input:focus{
+    outline:2px solid #0f4c81;
+    border-color:#0f4c81;
+}
+
+.search-btn{
+    border:none;
+    padding:0 20px;
+    border-radius:7px;
+    background:#0f4c81;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.search-btn:hover{
+    background:#e67e22;
+}
+
+.no-results{
+    text-align:center;
+    color:#667085;
+    padding:40px 0;
+    grid-column:1/-1;
+}
+
+/* PRODUCT FILTER */
+
+.filter-bar{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.filter-btn{
+    border:1px solid #d7dce2;
+    background:white;
+    color:#31566d;
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.filter-btn:hover{
+    border-color:#0f4c81;
+}
+
+.filter-btn.active{
+    background:#0f4c81;
+    color:white;
+    border-color:#0f4c81;
+}
+
+.results-count{
+    text-align:center;
+    color:#667085;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.price-disclaimer{
+    text-align:center;
+    color:#8a5a00;
+    background:#fff6e0;
+    border:1px solid #ffe4a3;
+    font-size:12.5px;
+    padding:10px 14px;
+    border-radius:8px;
+    max-width:720px;
+    margin:0 auto 16px;
+    line-height:1.5;
+}
+
+/* PRODUCTS */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.product{
+    background:white;
+    border:1px solid #e2e6ea;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 5px 18px rgba(0,0,0,.05);
+}
+
+.product-image{
+    position:relative;
+    height:160px;
+    border-radius:10px;
+    background:#e8eef2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:55px;
+    color:#31566d;
+    margin-bottom:18px;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.icon-fallback{
+    display:none;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100%;
+    background:linear-gradient(135deg,#eef4f8,#dfe9f0);
+}
+
+.icon-fallback svg{
+    width:56%;
+    height:56%;
+}
+
+.product h3{
+    margin-bottom:8px;
+    font-size:17px;
+}
+
+.product p{
+    color:#667085;
+    font-size:14px;
+}
+
+.price-row{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    margin-top:12px;
+    flex-wrap:wrap;
+}
+
+.price{
+    font-size:19px;
+    font-weight:bold;
+    color:#0f4c81;
+}
+
+.price-note{
+    font-size:11px;
+    color:#8a94a3;
+}
+
+.tag{
+    display:inline-block;
+    margin-top:12px;
+    padding:5px 10px;
+    border-radius:20px;
+    background:#eef6fb;
+    color:#13517b;
+    font-size:12px;
+}
+
+.quote-btn{
+    width:100%;
+    border:none;
+    padding:12px;
+    margin-top:16px;
+    border-radius:7px;
+    background:#0f4c81;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.quote-btn:hover{
+    background:#e67e22;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.feature{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    border:1px solid #e1e5ea;
+}
+
+.feature-icon{
+    font-size:32px;
+}
+
+.feature h3{
+    margin:10px 0;
+}
+
+.feature p{
+    color:#667085;
+    font-size:13px;
+}
+
+/* ABOUT */
+
+.about{
+    background:#eef4f8;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.about p{
+    color:#556070;
+    margin-top:12px;
+}
+
+.process{
+    margin-top:15px;
+}
+
+.process div{
+    margin:12px 0;
+    font-weight:bold;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#092b46;
+    color:white;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-info p{
+    margin:12px 0;
+    color:#dcecf7;
+}
+
+.form{
+    background:white;
+    color:#172033;
+    padding:25px;
+    border-radius:12px;
+}
+
+.form input,
+.form select,
+.form textarea{
+    width:100%;
+    padding:12px;
+    margin:6px 0 12px;
+    border:1px solid #d7dce2;
+    border-radius:6px;
+}
+
+.form textarea{
+    height:100px;
+    resize:vertical;
+}
+
+.form button{
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:7px;
+    background:#e67e22;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+    background:#061d2e;
+    color:#cbd5e1;
+    text-align:center;
+    padding:25px;
+    font-size:13px;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .products{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .features{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:550px){
+
+    .products,
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+Shiv <span>Foundry</span> Traders
+</div>
+
+<div class="nav-links">
+
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-container">
+
+<h1>
+Automobile & Industrial Components
+for B2B Buyers
+</h1>
+
+<p>
+Small automobile and industrial components,
+bulk enquiries and custom requirements.
+Send your requirement and request a quotation.
+</p>
+
+<a href="#products" class="btn btn-orange">
+View Products
+</a>
+
+<a href="#contact" class="btn btn-white">
+Request a Quote
+</a>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Products</h2>
+
+<p>
+60+ small turned & pressed components manufactured to order.
+Made only after your requirement and quantity are confirmed.
+</p>
+
+</div>
+
+<div class="search-bar">
+<input type="text" id="searchInput" placeholder="Search parts — e.g. bush, flange, bolt, washer..." oninput="renderProducts()">
+<button class="search-btn" onclick="renderProducts()">🔍 Search</button>
+</div>
+
+<div class="filter-bar" id="filterBar"></div>
+
+<p class="price-disclaimer">
+💡 Prices shown are <strong>starting indicative rates</strong> based on current market rates for standard sizes.
+Final price depends on exact size, material grade & order quantity — confirmed instantly on WhatsApp enquiry.
+</p>
+
+<p class="results-count" id="resultsCount"></p>
+
+<div class="products" id="productsGrid"></div>
+
+</div>
+
+</section>
+
+
+<!-- WHY US -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Why B2B Buyers Can Contact Us
+</h2>
+
+</div>
+
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="feature-icon">
+📦
+</div>
+
+<h3>
+Bulk Enquiry
+</h3>
+
+<p>
+Discuss quantity and requirement before order.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+📐
+</div>
+
+<h3>
+Custom Requirement
+</h3>
+
+<p>
+Share dimensions or drawing for discussion.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+💬
+</div>
+
+<h3>
+Quick Enquiry
+</h3>
+
+<p>
+Send your requirement directly through website.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🤝
+</div>
+
+<h3>
+B2B Focus
+</h3>
+
+<p>
+Business-to-business component enquiries.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+
+<div>
+
+<h2>
+About Shiv Foundry Traders
+</h2>
+
+<p>
+We focus on automobile and industrial component
+requirements for business buyers.
+</p>
+
+<p>
+Every part on this site is made to order once your quantity
+and specification is confirmed — nothing is held as
+ready-made stock, so lead time depends on quantity.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Simple B2B Order Process
+</h3>
+
+<div class="process">
+
+<div>
+1️⃣ Select Product
+</div>
+
+<div>
+2️⃣ Send Quantity & Specification
+</div>
+
+<div>
+3️⃣ Receive Quotation
+</div>
+
+<div>
+4️⃣ Finalize Terms & Order
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container contact-grid">
+
+
+<div class="contact-info">
+
+<h2>
+Send Your Requirement
+</h2>
+
+<p>
+Tell us the component, quantity and any
+drawing/specification you have.
+</p>
+
+<p>
+📍 Kanpur, Uttar Pradesh, India
+</p>
+
+<p>
+📱 WhatsApp / Call: <a href="tel:+919621329042" style="color:#dcecf7">+91 96213 29042</a>
+</p>
+
+<p>
+✉️ Email: <a href="mailto:sumit208005@gmail.com" style="color:#dcecf7">sumit208005@gmail.com</a>
+</p>
+
+</div>
+
+
+<form class="form" onsubmit="sendWhatsApp(event)">
+
+<h3>
+Request a Quote
+</h3>
+
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required
+>
+
+
+<input
+type="text"
+id="company"
+placeholder="Company Name"
+>
+
+
+<input
+type="tel"
+id="phone"
+placeholder="Mobile Number"
+required
+>
+
+
+<input
+type="email"
+id="email"
+placeholder="Email"
+>
+
+
+<select id="product">
+<option>Select Product</option>
+</select>
+
+
+<input
+type="text"
+id="quantity"
+placeholder="Required Quantity"
+>
+
+
+<textarea
+id="message"
+placeholder="Requirement / dimensions / drawing details">
+</textarea>
+
+
+<button type="submit">
+Send Enquiry on WhatsApp
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 Shiv Foundry Traders
+|
+B2B Automobile & Industrial Components
+
+</footer>
+
+
+<script>
+
+/*
+============================================
+PRODUCT CATALOGUE
+Add / remove parts here — everything else
+(grid, filters, dropdown) builds itself.
+icon   -> any emoji or unicode symbol
+tag    -> short label shown on the card
+cat    -> category used for filtering
+============================================
+*/
+
+const PARTS = [
+{name:"Automobile Bush", icon:"⚙️", tag:"Bulk Supply", cat:"Bushes & Bearings", desc:"Small bush component for suitable automobile and mechanical applications.", img:"images/bushes-bearings.jpg", price:"₹15/pc"},
+{name:"Bearing Bush", icon:"⚙️", tag:"Requirement Based", cat:"Bushes & Bearings", desc:"Plain bearing bush turned to bore and OD as per drawing.", img:"images/bushes-bearings.jpg", price:"₹120/pc"},
+{name:"Bush Bearing", icon:"⚙️", tag:"Custom Size", cat:"Bushes & Bearings", desc:"Bronze / MS bush bearing for shaft support applications.", img:"images/bushes-bearings.jpg", price:"₹99/pc"},
+{name:"Bush Sleeve", icon:"⚙️", tag:"Bulk Supply", cat:"Bushes & Bearings", desc:"Sleeve-type bush used as a wear liner between mating parts.", img:"images/bushes-bearings.jpg", price:"₹20/pc"},
+{name:"Machine Bush", icon:"⚙️", tag:"Custom Requirement", cat:"Bushes & Bearings", desc:"General purpose machine bush turned on request.", img:"images/bushes-bearings.jpg", price:"₹30/pc"},
+{name:"Foot Step Bearing", icon:"⚙️", tag:"Requirement Based", cat:"Bushes & Bearings", desc:"Vertical shaft support bearing for pump & motor bases.", img:"images/bushes-bearings.jpg", price:"₹250/pc"},
+{name:"Adapter Sleeve", icon:"⚙️", tag:"Custom Size", cat:"Bushes & Bearings", desc:"Tapered adapter sleeve for mounting bearings on shafts.", img:"images/bushes-bearings.jpg", price:"₹150/pc"},
+
+{name:"Flange", icon:"◉", tag:"Custom Size", cat:"Flanges & Collars", desc:"Metal flange components available according to required size and specification.", img:"images/flanges-collars.jpg", price:"₹75/pc"},
+{name:"Shaft Collar", icon:"◉", tag:"Custom Size", cat:"Flanges & Collars", desc:"Collar fitted on shaft to locate bearings or components.", img:"images/flanges-collars.jpg", price:"₹40/pc"},
+{name:"Locking Collar", icon:"◉", tag:"Requirement Based", cat:"Flanges & Collars", desc:"Split or set-screw collar for axial locking on a shaft.", img:"images/flanges-collars.jpg", price:"₹55/pc"},
+{name:"Collar", icon:"◉", tag:"Bulk Supply", cat:"Flanges & Collars", desc:"Turned collar component for suitable mechanical assemblies.", img:"images/flanges-collars.jpg", price:"₹45/pc"},
+{name:"Coupling Sleeve", icon:"◉", tag:"Custom Requirement", cat:"Flanges & Collars", desc:"Sleeve used to join two shaft ends for power transmission.", img:"images/flanges-collars.jpg", price:"₹350/pc"},
+{name:"Coupling", icon:"◉", tag:"Custom Requirement", cat:"Flanges & Collars", desc:"Shaft coupling component made as per size and torque requirement.", img:"images/flanges-collars.jpg", price:"₹550/pc"},
+
+{name:"Spacer", icon:"◎", tag:"Requirement Based", cat:"Spacers & Rings", desc:"Spacer components for suitable mechanical and automobile assemblies.", img:"images/spacers-rings.jpg", price:"₹8/pc"},
+{name:"Retaining Ring", icon:"◎", tag:"Bulk Supply", cat:"Spacers & Rings", desc:"Ring used to hold components in place on a shaft or bore.", img:"images/spacers-rings.jpg", price:"₹3/pc"},
+{name:"Snap Ring", icon:"◎", tag:"Bulk Supply", cat:"Spacers & Rings", desc:"Internal / external snap ring for retaining assemblies.", img:"images/spacers-rings.jpg", price:"₹3/pc"},
+{name:"Circlip", icon:"◎", tag:"Bulk Supply", cat:"Spacers & Rings", desc:"Standard circlip for shaft and bore retention applications.", img:"images/spacers-rings.jpg", price:"₹2/pc"},
+{name:"Ring", icon:"◎", tag:"Custom Size", cat:"Spacers & Rings", desc:"Simple turned ring component to given ID/OD/thickness.", img:"images/spacers-rings.jpg", price:"₹10/pc"},
+{name:"Thrust Washer", icon:"◎", tag:"Requirement Based", cat:"Spacers & Rings", desc:"Thrust washer to take axial load between rotating parts.", img:"images/spacers-rings.jpg", price:"₹15/pc"},
+{name:"Shim", icon:"◎", tag:"Custom Size", cat:"Spacers & Rings", desc:"Thin shim for adjusting clearance/alignment in assemblies.", img:"images/spacers-rings.jpg", price:"₹5/pc"},
+
+{name:"Bracket", icon:"▣", tag:"Bulk Supply", cat:"Brackets & Pulleys", desc:"Small metal brackets for suitable automobile and industrial applications.", img:"images/brackets-pulleys.jpg", price:"₹25/pc"},
+{name:"Gear Blank", icon:"▣", tag:"Custom Requirement", cat:"Brackets & Pulleys", desc:"Blank turned/cut to size, ready for gear cutting.", img:"images/brackets-pulleys.jpg", price:"₹150/pc"},
+{name:"Pulley", icon:"▣", tag:"Custom Size", cat:"Brackets & Pulleys", desc:"V-belt / flat pulley made as per drawing and bore size.", img:"images/brackets-pulleys.jpg", price:"₹120/pc"},
+{name:"Sprocket", icon:"▣", tag:"Custom Requirement", cat:"Brackets & Pulleys", desc:"Chain sprocket manufactured as per pitch and tooth count.", img:"images/brackets-pulleys.jpg", price:"₹200/pc"},
+{name:"Hinge", icon:"▣", tag:"Bulk Supply", cat:"Brackets & Pulleys", desc:"Small metal hinge for panels, doors and enclosures.", img:"images/brackets-pulleys.jpg", price:"₹30/pc"},
+{name:"Hook", icon:"▣", tag:"Custom Requirement", cat:"Brackets & Pulleys", desc:"Fabricated / forged hook for load and fixture applications.", img:"images/brackets-pulleys.jpg", price:"₹40/pc"},
+{name:"Clamp", icon:"▣", tag:"Requirement Based", cat:"Brackets & Pulleys", desc:"Clamp component for holding pipes, hoses or assemblies.", img:"images/brackets-pulleys.jpg", price:"₹35/pc"},
+
+{name:"Pin", icon:"●", tag:"Custom Requirement", cat:"Pins & Fasteners", desc:"Simple mechanical pin components for suitable assemblies.", img:"images/pins-fasteners.jpg", price:"₹3/pc"},
+{name:"Dowel Pin", icon:"●", tag:"Bulk Supply", cat:"Pins & Fasteners", desc:"Precision dowel pin for locating mating components.", img:"images/pins-fasteners.jpg", price:"₹3/pc"},
+{name:"Split Pin", icon:"●", tag:"Bulk Supply", cat:"Pins & Fasteners", desc:"Split cotter pin used for locking nuts and pins in place.", img:"images/pins-fasteners.jpg", price:"₹2/pc"},
+{name:"Cotter Pin", icon:"●", tag:"Bulk Supply", cat:"Pins & Fasteners", desc:"Cotter pin for securing joints against loosening.", img:"images/pins-fasteners.jpg", price:"₹2/pc"},
+{name:"Taper Pin", icon:"●", tag:"Custom Size", cat:"Pins & Fasteners", desc:"Tapered pin for precise, self-locking shaft connections.", img:"images/pins-fasteners.jpg", price:"₹5/pc"},
+{name:"Roll Pin", icon:"●", tag:"Bulk Supply", cat:"Pins & Fasteners", desc:"Spring-loaded roll pin for shaft and lever assemblies.", img:"images/pins-fasteners.jpg", price:"₹3/pc"},
+{name:"Ball Stud", icon:"●", tag:"Custom Requirement", cat:"Pins & Fasteners", desc:"Ball stud for linkage and suspension type applications.", img:"images/pins-fasteners.jpg", price:"₹40/pc"},
+{name:"Ball Joint", icon:"●", tag:"Custom Requirement", cat:"Pins & Fasteners", desc:"Ball joint component for pivoting mechanical linkages.", img:"images/pins-fasteners.jpg", price:"₹120/pc"},
+{name:"Tie Rod End", icon:"●", tag:"Custom Requirement", cat:"Pins & Fasteners", desc:"Tie rod end component made as per drawing and thread size.", img:"images/pins-fasteners.jpg", price:"₹180/pc"},
+
+{name:"Washer", icon:"○", tag:"Bulk Quantity", cat:"Washers & Nuts", desc:"Small washer components for automobile and industrial requirements.", img:"images/washers-nuts.jpg", price:"₹1/pc"},
+{name:"Spring Washer", icon:"○", tag:"Bulk Supply", cat:"Washers & Nuts", desc:"Spring washer to maintain bolt tension and prevent loosening.", img:"images/washers-nuts.jpg", price:"₹2/pc"},
+{name:"Nut", icon:"○", tag:"Bulk Supply", cat:"Washers & Nuts", desc:"Standard hex nut manufactured to given thread size.", img:"images/washers-nuts.jpg", price:"₹2/pc"},
+{name:"Lock Nut", icon:"○", tag:"Bulk Supply", cat:"Washers & Nuts", desc:"Self-locking nut for vibration-prone assemblies.", img:"images/washers-nuts.jpg", price:"₹4/pc"},
+{name:"Wing Nut", icon:"○", tag:"Requirement Based", cat:"Washers & Nuts", desc:"Hand-tightening wing nut for tool-free fastening.", img:"images/washers-nuts.jpg", price:"₹8/pc"},
+{name:"Cap Nut", icon:"○", tag:"Requirement Based", cat:"Washers & Nuts", desc:"Domed cap nut for a finished, covered bolt end.", img:"images/washers-nuts.jpg", price:"₹5/pc"},
+
+{name:"Bolt", icon:"🔩", tag:"Bulk Supply", cat:"Bolts & Screws", desc:"Standard bolt manufactured to given size and thread pitch.", img:"images/bolts-screws.jpg", price:"₹3/pc"},
+{name:"Hex Bolt", icon:"🔩", tag:"Bulk Supply", cat:"Bolts & Screws", desc:"Hex head bolt for general structural and machine use.", img:"images/bolts-screws.jpg", price:"₹4/pc"},
+{name:"Stud", icon:"🔩", tag:"Custom Requirement", cat:"Bolts & Screws", desc:"Threaded stud for flange and cover fastening.", img:"images/bolts-screws.jpg", price:"₹6/pc"},
+{name:"Foundation Bolt", icon:"🔩", tag:"Custom Size", cat:"Bolts & Screws", desc:"L / J type foundation bolt for machine base mounting.", img:"images/bolts-screws.jpg", price:"₹40/pc"},
+{name:"Anchor Bolt", icon:"🔩", tag:"Custom Size", cat:"Bolts & Screws", desc:"Anchor bolt for fixing structures and equipment to a base.", img:"images/bolts-screws.jpg", price:"₹35/pc"},
+{name:"Eye Bolt", icon:"🔩", tag:"Custom Requirement", cat:"Bolts & Screws", desc:"Eye bolt for lifting and rigging attachment points.", img:"images/bolts-screws.jpg", price:"₹22/pc"},
+{name:"U-Bolt", icon:"🔩", tag:"Custom Size", cat:"Bolts & Screws", desc:"U-shaped bolt for clamping pipes and round sections.", img:"images/bolts-screws.jpg", price:"₹25/pc"},
+{name:"Carriage Bolt", icon:"🔩", tag:"Bulk Supply", cat:"Bolts & Screws", desc:"Round head square neck bolt for wood/metal fixing.", img:"images/bolts-screws.jpg", price:"₹5/pc"},
+{name:"Screw", icon:"🔩", tag:"Bulk Supply", cat:"Bolts & Screws", desc:"Machine screw manufactured to given size and drive type.", img:"images/bolts-screws.jpg", price:"₹2/pc"},
+{name:"Grub Screw", icon:"🔩", tag:"Bulk Supply", cat:"Bolts & Screws", desc:"Headless grub screw for locking collars and pulleys.", img:"images/bolts-screws.jpg", price:"₹3/pc"},
+
+{name:"Key (Machine Key)", icon:"🔑", tag:"Custom Size", cat:"Shafts & Sleeves", desc:"Parallel / taper machine key for shaft-to-hub power transmission.", img:"images/shafts-sleeves.jpg", price:"₹15/pc"},
+{name:"Shaft", icon:"🔑", tag:"Custom Requirement", cat:"Shafts & Sleeves", desc:"Turned shaft manufactured to given length and diameter.", img:"images/shafts-sleeves.jpg", price:"₹90/pc"},
+{name:"Sleeve", icon:"🔑", tag:"Custom Size", cat:"Shafts & Sleeves", desc:"Protective / mounting sleeve fitted over a shaft.", img:"images/shafts-sleeves.jpg", price:"₹60/pc"},
+
+{name:"Gasket", icon:"⭘", tag:"Custom Size", cat:"Seals & Gaskets", desc:"Flat gasket cut to size for sealing between two flanges.", img:"images/seals-gaskets.jpg", price:"₹35/pc"},
+{name:"Plug", icon:"⭘", tag:"Requirement Based", cat:"Seals & Gaskets", desc:"Threaded plug for closing ports and openings.", img:"images/seals-gaskets.jpg", price:"₹20/pc"},
+{name:"Nipple", icon:"⭘", tag:"Custom Size", cat:"Seals & Gaskets", desc:"Pipe nipple for connecting two threaded fittings.", img:"images/seals-gaskets.jpg", price:"₹30/pc"},
+{name:"Fitting", icon:"⭘", tag:"Custom Requirement", cat:"Seals & Gaskets", desc:"General purpose pipe/hose fitting made to specification.", img:"images/seals-gaskets.jpg", price:"₹40/pc"},
+{name:"Rivet", icon:"⭘", tag:"Bulk Supply", cat:"Seals & Gaskets", desc:"Solid rivet for permanent sheet metal joints.", img:"images/seals-gaskets.jpg", price:"₹2/pc"},
+];
+
+const CAT_SVG = {
+"Bushes & Bearings": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="38" fill="none" stroke="#31566d" stroke-width="6"/><circle cx="50" cy="50" r="20" fill="none" stroke="#e67e22" stroke-width="6"/><circle cx="50" cy="50" r="6" fill="#31566d"/></svg>`,
+"Flanges & Collars": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="none" stroke="#31566d" stroke-width="5"/><circle cx="50" cy="50" r="14" fill="none" stroke="#31566d" stroke-width="5"/><circle cx="50" cy="18" r="5" fill="#e67e22"/><circle cx="82" cy="50" r="5" fill="#e67e22"/><circle cx="50" cy="82" r="5" fill="#e67e22"/><circle cx="18" cy="50" r="5" fill="#e67e22"/></svg>`,
+"Spacers & Rings": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="38" cy="50" r="24" fill="none" stroke="#31566d" stroke-width="6"/><circle cx="68" cy="50" r="24" fill="none" stroke="#e67e22" stroke-width="6"/></svg>`,
+"Brackets & Pulleys": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M20 80 L20 30 L70 30" fill="none" stroke="#31566d" stroke-width="8" stroke-linecap="round"/><circle cx="70" cy="55" r="18" fill="none" stroke="#e67e22" stroke-width="6"/></svg>`,
+"Pins & Fasteners": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="44" y="15" width="12" height="70" rx="6" fill="#31566d"/><circle cx="50" cy="15" r="10" fill="#e67e22"/></svg>`,
+"Washers & Nuts": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="50,12 82,30 82,68 50,86 18,68 18,30" fill="none" stroke="#31566d" stroke-width="6"/><circle cx="50" cy="49" r="16" fill="none" stroke="#e67e22" stroke-width="6"/></svg>`,
+"Bolts & Screws": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="50,10 68,20 68,40 50,50 32,40 32,20" fill="#31566d"/><rect x="43" y="48" width="14" height="42" fill="#e67e22"/><path d="M43 58 L57 58 M43 68 L57 68 M43 78 L57 78" stroke="white" stroke-width="2"/></svg>`,
+"Shafts & Sleeves": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="42" width="70" height="16" rx="8" fill="#31566d"/><rect x="35" y="30" width="30" height="40" rx="6" fill="none" stroke="#e67e22" stroke-width="5"/></svg>`,
+"Seals & Gaskets": `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="36" fill="none" stroke="#e67e22" stroke-width="10"/><circle cx="50" cy="50" r="14" fill="#f5f7fa" stroke="#31566d" stroke-width="4"/></svg>`
+};
+
+const CATEGORIES = ["All", ...new Set(PARTS.map(p => p.cat))];
+let activeCategory = "All";
+let selectedProduct = "";
+
+
+function renderFilters(){
+
+const bar = document.getElementById("filterBar");
+bar.innerHTML = "";
+
+CATEGORIES.forEach(cat => {
+
+const btn = document.createElement("button");
+btn.className = "filter-btn" + (cat === activeCategory ? " active" : "");
+btn.textContent = cat;
+btn.onclick = () => {
+activeCategory = cat;
+renderFilters();
+renderProducts();
+};
+
+bar.appendChild(btn);
+
+});
+
+}
+
+
+function renderProducts(){
+
+const grid = document.getElementById("productsGrid");
+grid.innerHTML = "";
+
+const query = document.getElementById("searchInput").value.trim().toLowerCase();
+
+let list = activeCategory === "All"
+? PARTS
+: PARTS.filter(p => p.cat === activeCategory);
+
+if(query){
+list = list.filter(p =>
+p.name.toLowerCase().includes(query) ||
+p.desc.toLowerCase().includes(query) ||
+p.cat.toLowerCase().includes(query)
+);
+}
+
+document.getElementById("resultsCount").textContent =
+list.length + " of " + PARTS.length + " parts shown"
++ (activeCategory !== "All" ? " — " + activeCategory : "")
++ (query ? " — matching \"" + query + "\"" : "");
+
+if(list.length === 0){
+grid.innerHTML = `<p class="no-results">No parts matched your search. Try a different keyword, or send us your requirement directly — we manufacture custom parts on request too.</p>`;
+return;
+}
+
+list.forEach(part => {
+
+const card = document.createElement("div");
+card.className = "product";
+
+card.innerHTML = `
+<div class="product-image">
+<img src="${part.img}" alt="${part.name}"
+onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+<span class="icon-fallback">${CAT_SVG[part.cat] || part.icon}</span>
+</div>
+<h3>${part.name}</h3>
+<p>${part.desc}</p>
+<div class="price-row">
+<span class="price">Starting ${part.price}</span>
+<span class="price-note">+GST, size/qty based</span>
+</div>
+<span class="tag">${part.tag}</span>
+<button class="quote-btn">Request Quote</button>
+`;
+
+card.querySelector(".quote-btn")
+.addEventListener("click", () => selectProduct(part.name));
+
+grid.appendChild(card);
+
+});
+
+}
+
+
+function renderDropdown(){
+
+const select = document.getElementById("product");
+select.innerHTML = "";
+
+const first = document.createElement("option");
+first.textContent = "Select Product";
+select.appendChild(first);
+
+PARTS.forEach(part => {
+const opt = document.createElement("option");
+opt.value = part.name;
+opt.textContent = part.name + " (from " + part.price + ")";
+select.appendChild(opt);
+});
+
+const custom = document.createElement("option");
+custom.textContent = "Other / Custom";
+select.appendChild(custom);
+
+}
+
+
+function selectProduct(product){
+
+selectedProduct = product;
+
+document
+.getElementById("product")
+.value = product;
+
+document
+.getElementById("contact")
+.scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+
+function sendWhatsApp(event){
+
+event.preventDefault();
+
+
+let name =
+document.getElementById("name").value;
+
+let company =
+document.getElementById("company").value;
+
+let phone =
+document.getElementById("phone").value;
+
+let email =
+document.getElementById("email").value;
+
+let productSelect =
+document.getElementById("product");
+
+let product =
+productSelect.value;
+
+let selectedOpt =
+productSelect.options[productSelect.selectedIndex];
+
+let productLabel =
+selectedOpt ? selectedOpt.textContent : product;
+
+let quantity =
+document.getElementById("quantity").value;
+
+let message =
+document.getElementById("message").value;
+
+
+/*
+IMPORTANT:
+
+Replace 91XXXXXXXXXX
+with your actual WhatsApp number.
+
+Example:
+919042XXXXXX
+*/
+
+let whatsappNumber =
+"919621329042";
+
+
+let text =
+"B2B Enquiry - Shiv Foundry Traders\n\n" +
+
+"Name: " + name + "\n" +
+
+"Company: " + company + "\n" +
+
+"Mobile: " + phone + "\n" +
+
+"Email: " + email + "\n" +
+
+"Product: " + productLabel + "\n" +
+
+"Quantity: " + quantity + "\n" +
+
+"Requirement: " + message;
+
+
+let url =
+"https://wa.me/" +
+whatsappNumber +
+"?text=" +
+encodeURIComponent(text);
+
+
+window.open(url,"_blank");
+
+}
+
+
+renderFilters();
+renderProducts();
+renderDropdown();
+
+</script>
+
+
+</body>
+</html>
